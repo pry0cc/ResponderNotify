@@ -7,8 +7,8 @@ But I did something just short of that, and equally as cool (I'm lying to myself
 
 # Installation
 ```
-wget <UpHash.py>
-wget <ResponderNotify>
+wget https://raw.githubusercontent.com/pry0cc/ResponderNotify/master/UpHash.py
+wget https://raw.githubusercontent.com/pry0cc/ResponderNotify/master/notify.sh
 ```
 
 ### Create a Telegram Bot
