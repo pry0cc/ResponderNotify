@@ -9,6 +9,8 @@ But I did something just short of that, and equally as cool (I'm lying to myself
 ```
 wget https://raw.githubusercontent.com/pry0cc/ResponderNotify/master/UpHash.py
 wget https://raw.githubusercontent.com/pry0cc/ResponderNotify/master/notify.sh
+chmod +x UpHash.py
+chmod +x notify.sh
 ```
 
 ### Create a Telegram Bot
